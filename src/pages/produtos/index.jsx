@@ -12,7 +12,7 @@ const Produtos = () => {
         // GET - busca dados do endpoint
         // then - método assíncrono, espera retorno do get
         // catch - captura e trata erro da requisição realizada
-        axios.get("http://172.19.0.49/pizzariaoficial/api/v1/produto")
+        axios.get("http://172.19.0.49/pizzariateste/api/v1/produto")
         .then(response=>{
             console.log(response.data.data)
             setPizzas(response.data.data)
